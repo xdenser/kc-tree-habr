@@ -84,7 +84,9 @@ var ready = false, template = {
         if(!ready){
             $(function(){
               addCss(css);
-              document.write(HTML);
+              var div = document.createElement("div");
+              div.innerHTML = HTML;
+              document.body.appendChild(div);
               ready = true;
               cb('kc.treeView');
             });
