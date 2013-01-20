@@ -111,7 +111,7 @@ function hereDoc(f) {
 
 var HTML = hereDoc(function() {/*! 
 <script id='kc.treeView' type='text/html'>
-<div class='tree'  data-bind='with: tree'>
+<div class='tree'>
   <ul data-bind='template: {name:"treeNode", foreach: children}'>
   </ul>    
 </div>  
