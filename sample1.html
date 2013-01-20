@@ -1,0 +1,29 @@
+<html>
+ <head>
+     <title>Sample 1</title>
+     <script src="deps/knockout-2.2.0.js"></script>
+     <script src="deps/knockout.component.js"></script>
+     <script src="tree.js"></script>
+     
+ </head>
+ <body>
+    <div data-bind='kc.treeView: { data: tree }'>
+    </div>    
+    <script>
+        var vm = {
+           tree: [
+             {
+                caption: 'node1',
+                children:[
+                   {caption: 'node2'},
+                   {caption: 'node3'}
+                ]
+             },
+             {caption: 'node4'}
+           ]
+        };
+        
+        ko.applyBindings(vm);
+    </script> 
+ </body>   
+</html>    
