@@ -97,11 +97,9 @@ var ready = false, template = {
 }
 
 kc.component('treeView',template,function(){
-   var vm = {
-      data: ko.observable([]),
-      map: ko.observable(),
-   };
-   vm.tree = new TreeView(vm.data,vm.map);
+   var map = ko.observable();
+   vm = new TreeView(ko.observable([]),map);
+   vm.map = map;
    return vm; 
 });
 
