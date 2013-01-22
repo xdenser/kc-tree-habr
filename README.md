@@ -1,4 +1,4 @@
 kc-tree-habr
 ============
 
-publication demo code
+[http://habrahabr.ru/post/165565/](publication) demo code
